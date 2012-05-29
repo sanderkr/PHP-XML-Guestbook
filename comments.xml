@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<xml>
+<comment time="1336315201"><email>jakub@jedenbod.cz</email><name>Jakub</name><message>+ Gravatar support&#xD;
++ Preserve linebreaks&#xD;
++ Strip unwanted HTML/JS&#xD;
++ JS &amp; PHP (empty) form validation</message></comment><comment time="1336315956"><email>phejl@lednice.org</email><name>Jaroslav Hejl</name><message>&lt;SCRIPT SRC=http://ha.ckers.org/xss.js&gt;&lt;/SCRIPT&gt;&#xD;
+&lt;h1&gt;HTML input Test&lt;/h1&gt;</message></comment><comment time="1336317283"><email/><name>Script kiddie</name><message>&lt;/message&gt;&lt;/comment&gt;&lt;/xml&gt;</message></comment><comment time="1336333336"><email>jakub@jedenbod.cz</email><name>Jakub</name><message>+ Pagination!</message></comment></xml>
