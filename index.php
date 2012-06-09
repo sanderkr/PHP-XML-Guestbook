@@ -17,10 +17,11 @@
     global $page;
     global $xmlsrc;
     global $xml;
+    $pagination = 3; // Number of posts on page
     $i = 0; // comments index   
     foreach ($xml->comment as $comment) {
       ++$i;       
-      if( (($page-1)*3) < $i && $i <= ($page*3) ) { // match page number to comments we want to show
+      if( (($page-1)*$pagination) < $i && $i <= ($page*$pagination) ) { // match page number to comments we want to show
         $gravatar_img = 'http://www.gravatar.com/avatar/?gravatar_id='.md5(strtolower($comment->email)).'&amp;default=monsterid&amp;size=75'; // get gravatar img for each email   
         	echo '
           <div class="commentwrap">
@@ -32,7 +33,7 @@
                   <div class="comment">'.nl2br(htmlspecialchars($comment->message)).'</div>' // strip HTML - but preserve line breaks 
           .'</div>';
       } else {
-          if($i > ($page*3)) { // add next page link (if more comments exist)
+          if($i > ($page*$pagination)) { // add next page link (if more comments exist)
              echo "<a class=\"pageplus\" href=\"?page="; echo $page+1; echo "#comments\">Newer comments &raquo;</a>"; break; 
            } // end next page link
       }  
